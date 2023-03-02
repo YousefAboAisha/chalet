@@ -3,6 +3,7 @@ import { useScrollDirection } from "Hooks/useScrollDirection";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Button from "./UI/Button";
 
 const Navbar = () => {
   const router = useRouter();
@@ -31,7 +32,7 @@ const Navbar = () => {
                 className={`duration-300 cursor-pointer 
             ${
               router.pathname == `${elem.href}`
-                ? "text-primary border-b border-primary border-b-2"
+                ? "text-primary border-primary border-b-2"
                 : ""
             } `}
                 title={elem.title}
@@ -40,6 +41,8 @@ const Navbar = () => {
               </Link>
             );
           })}
+
+          <Button title="Get started" style={"text-[11px] p-2"} />
         </div>
       </div>
     </div>

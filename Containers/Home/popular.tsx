@@ -1,3 +1,4 @@
+import Button from "Components/UI/Button";
 import CustomImage from "Components/UI/CustomImage";
 import Heading from "Components/UI/Heading";
 import { PopularData } from "Data/popularData";
@@ -26,6 +27,10 @@ const Popular = () => {
             />
           );
         })}
+      </div>
+
+      <div className="mt-8 mx-auto w-3/12">
+        <Button title={"Explore More"} />
       </div>
     </div>
   );
