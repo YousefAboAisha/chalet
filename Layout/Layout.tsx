@@ -1,6 +1,7 @@
 import useLoading from "../Hooks/useLoading";
 import Spinner from "../Components/UI/Spinner";
 import Navbar from "Components/Navbar";
+import Footer from "Components/UI/Footer";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -15,6 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <Navbar />
       <main className="">{children}</main>
+      <Footer />
     </>
   );
 };

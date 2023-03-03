@@ -1,6 +1,8 @@
 import Button from "Components/UI/Button";
+import Thumnail from "Components/UI/thumnail";
 import Heading from "Components/UI/Heading";
 import React from "react";
+import { ChaletsData } from "Data/chaletsData";
 
 const ChaletCards = () => {
   return (
@@ -17,7 +19,20 @@ const ChaletCards = () => {
         </div>
       </div>
 
-      <div className="mt-8"></div>
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {ChaletsData.map((elem, index) => {
+          return (
+            <Thumnail
+              key={index}
+              src={elem.src}
+              title={elem.title}
+              rate={elem.rate}
+              info={elem.info}
+              price={elem.price}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

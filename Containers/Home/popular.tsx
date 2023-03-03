@@ -3,6 +3,7 @@ import CustomImage from "Components/UI/CustomImage";
 import Heading from "Components/UI/Heading";
 import { PopularData } from "Data/popularData";
 import React from "react";
+import { FiMapPin } from "react-icons/fi";
 
 const Popular = () => {
   return (
@@ -16,15 +17,22 @@ const Popular = () => {
       <div className="relative w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
         {PopularData.map((elem, index) => {
           return (
-            <CustomImage
-              key={index}
-              src={elem.src}
-              width={400}
-              height={400}
-              alt="faw"
-              title={elem.title}
-              info={elem.info}
-            />
+            <div className="relative group" key={index}>
+              <CustomImage
+                src={elem.src}
+                width={400}
+                height={400}
+                alt="faw"
+                title={elem.title}
+              />
+              <div className="absolute group-hover:opacity-100 opacity-0 duration-500 bottom-0 left-0 min-h-1/4 w-full text-text_dark bg-[#0000002a] backdrop-blur-sm p-2">
+                <h2 className="flex items-center gap-2">
+                  <FiMapPin />
+                  {elem.title}
+                </h2>
+                <p className="opacity-90 text-sm font-normal">{elem.info}</p>
+              </div>
+            </div>
           );
         })}
       </div>

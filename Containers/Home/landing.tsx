@@ -15,13 +15,15 @@ const Landing = () => {
           additionalStyles="text-center"
         />
 
-        <Input
-          type={"search"}
-          placeholder={"Search for Chalets to reserve!"}
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          icon={<BsSearch size={24} />}
-        />
+        <div className="mt-8">
+          <Input
+            type={"search"}
+            placeholder={"Search for Chalets to reserve!"}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            icon={<BsSearch size={24} />}
+          />
+        </div>
       </div>
     </div>
   );

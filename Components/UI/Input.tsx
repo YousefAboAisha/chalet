@@ -8,7 +8,7 @@ type InputProps = {
 
 const Input = ({ value, placeholder, style, icon, ...rest }: InputProps) => {
   return (
-    <div className="relative dark:bg-background_dark bg-background_light rounded-[25px] mt-8 w-9/12 mx-auto">
+    <div className="relative dark:bg-background_dark bg-background_light rounded-[25px] w-9/12 mx-auto">
       <div className="absolute flex justify-center p-2 rounded-l-md items-center left-2 top-[50%] translate-y-[-50%] h-full border-none outline-none text-text_light dark:text-white">
         {icon}
       </div>

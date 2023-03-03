@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useState } from "react";
-import { FiMapPin } from "react-icons/fi";
 
 type CustomImageProps = {
   src: string;
@@ -8,8 +7,6 @@ type CustomImageProps = {
   height: number;
   alt: string;
   className?: string;
-  title?: string;
-  info?: string;
 } & React.ComponentProps<"img">;
 
 const CustomImage = ({
@@ -18,8 +15,6 @@ const CustomImage = ({
   height,
   alt,
   className,
-  title,
-  info,
 }: CustomImageProps) => {
   const [Img, setImg] = useState(src);
 
@@ -34,16 +29,8 @@ const CustomImage = ({
         alt={alt}
         onError={() => setImg("/notFound.jpg")}
         loading="lazy"
-        className="w-full h-full rounded-2xl"
+        className={`w-full h-full rounded-2xl ${className}`}
       />
-
-      <div className="absolute group-hover:opacity-100 opacity-0 duration-500 bottom-0 left-0 min-h-1/4 w-full text-text_dark bg-[#0000002a] backdrop-blur-sm p-2">
-        <h2 className="flex items-center gap-2">
-          <FiMapPin />
-          {title}
-        </h2>
-        <p className="opacity-90 text-sm font-normal">{info}</p>
-      </div>
     </div>
   );
 };
