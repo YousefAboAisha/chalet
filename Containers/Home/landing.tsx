@@ -8,7 +8,7 @@ const Landing = () => {
 
   return (
     <div className="relative w-full h-[90vh] mt-[70px] flex justify-center items-center bg-landing-image bg-cover bg-center before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#00000052]">
-      <div className="container bg-[#ffffff36] backdrop-blur-sm rounded-2xl p-4">
+      <div className="container bg-[#ffffff36] rounded-2xl p-4">
         <Heading
           title="Explore the world around you"
           details="take a break form the stress of your everyday life, plan trips and explore your favorite destinations"

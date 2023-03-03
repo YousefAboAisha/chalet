@@ -1,3 +1,4 @@
+import ChaletCards from "Containers/Home/chaletCards";
 import Landing from "Containers/Home/landing";
 import Popular from "Containers/Home/popular";
 import Value from "Containers/Home/value";
@@ -11,6 +12,7 @@ const Home = () => {
         <Popular />
         <Value />
         <VideoHero />
+        <ChaletCards />
       </div>
     </>
   );
