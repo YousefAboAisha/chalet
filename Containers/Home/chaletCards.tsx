@@ -13,10 +13,6 @@ const ChaletCards = () => {
           details="The best travel recommendations from around the world for you!"
           detailsStyles="w-full lg:w-full mx-0 text-start"
         />
-
-        <div className="w-fit">
-          <Button title="Explore more" style={"text-[11px] p-2"} />
-        </div>
       </div>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -32,6 +28,10 @@ const ChaletCards = () => {
             />
           );
         })}
+      </div>
+
+      <div className="mt-8 mx-auto w-3/12">
+        <Button title={"Explore More"} />
       </div>
     </div>
   );
