@@ -7,20 +7,19 @@ import Button from "./UI/Button";
 
 const Navbar = () => {
   const router = useRouter();
-  const [Style, setStyle] = useState("");
-  const path = router.pathname;
   const scrollDirection = useScrollDirection();
 
   return (
     <div
-      className={`fixed w-full h-[70px] top-0 left-0 z-20 items-center bg-[#EEE] duration-500 ${
-        scrollDirection === "down"
-          ? "shadow-lg border-b"
-          : "shadow-0 border-b-0"
+      className={`fixed w-full h-[70px] top-0 left-0 z-20 items-center bg-background_light text-text_light dark:bg-background_dark dark:text-text_dark duration-500 shadow-lg ${
+        scrollDirection === "down" ? "" : ""
       } `}
     >
       <div className="container flex flex-row justify-between items-center h-full">
-        <div className="text-2xl">Chalet</div>
+        <Link href={"/"} className="text-2xl">
+          Chalet
+        </Link>
+
         <div
           className={`flex items-center justify-center gap-4 md:gap-6 lg:gap-8`}
         >

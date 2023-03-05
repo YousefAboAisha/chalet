@@ -13,7 +13,7 @@ const Heading = ({
 }: HeadingProps) => {
   return (
     <h2
-      className={`group relative text-4xl font-semibold duration-500 uppercase text-text_dark dark:text-text_dark z-10 ${additionalStyles}  `}
+      className={`group relative text-4xl font-semibold duration-500 uppercase text-text_light  dark:text-text_dark z-10 ${additionalStyles}`}
     >
       {title}
 

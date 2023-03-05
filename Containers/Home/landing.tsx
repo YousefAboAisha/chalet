@@ -12,7 +12,7 @@ const Landing = () => {
         <Heading
           title="Explore the world around you"
           details="take a break form the stress of your everyday life, plan trips and explore your favorite destinations"
-          additionalStyles="text-center"
+          additionalStyles="text-center !text-[#FFF]"
         />
 
         <div className="mt-8">
@@ -22,6 +22,7 @@ const Landing = () => {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             icon={<BsSearch size={24} />}
+            style="bg-background_light dark:bg-background_light !text-text_light !dark:text-text_dark"
           />
         </div>
       </div>

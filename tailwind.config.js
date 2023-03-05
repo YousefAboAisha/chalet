@@ -14,7 +14,7 @@ module.exports = {
     extend: {
       colors: {
         // Dark Theme variables
-        background_dark: "#181D31",
+        background_dark: "#1B2430",
         text_dark: "#FFF",
 
         // Light theme variables
@@ -40,7 +40,7 @@ module.exports = {
       },
 
       borderColor: {
-        light: "#181D3150",
+        light: "#181D3115",
         dark: "#dddddd1a",
       },
 

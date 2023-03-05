@@ -24,10 +24,10 @@ const Subscripe = () => {
           onChange={(e) => setEmail(e.target.value)}
           type="email"
           placeholder="Enter your email address"
-          icon={<BiMailSend size={27} className="text-primary" />}
+          icon={<BiMailSend size={27} />}
         />
 
-        <div className="absolute w-fit text-[12px] top-[50%] translate-y-[-50%] right-[13%]">
+        <div className="absolute w-fit text-[12px] top-[50%] translate-y-[-50%] right-[13.4%]">
           <Button title="Subscribe Now" style="py-3" />
         </div>
       </div>

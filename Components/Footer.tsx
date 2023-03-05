@@ -9,7 +9,7 @@ const Footer = () => {
   const date = new Date().getFullYear();
 
   return (
-    <footer className="relative container grid grid-cols-1 lg:grid-cols-2 mt-24 mb-12 p-6 gap-4 bg-transparent text-text_dark rounded-lg shadow-lg border border-border_dark">
+    <footer className="relative container grid grid-cols-1 lg:grid-cols-2 mt-24 mb-12 p-6 gap-4 bg-background_light text-text_light dark:bg-background_dark dark:text-text_dark rounded-lg shadow-lg border border-border_dark dark:border-border_dark">
       <div className="flex flex-col gap-6">
         {FooterData.map((elem, index) => {
           return (
@@ -43,7 +43,7 @@ const Footer = () => {
                 href={elem.href}
                 target={"_blank"}
                 rel={"noreferrer"}
-                className="bg-transparent p-3 rounded-md border border-border_dark duration-500 hover:border-transparent"
+                className="bg-background_light dark:bg-background_dark text-text_light dark:text-text_dark p-3 shadow-lg rounded-md border border-transparent hover:border-light dark:hover:border-dark duration-500 "
               >
                 {<elem.icon size={19} />}
               </Link>
