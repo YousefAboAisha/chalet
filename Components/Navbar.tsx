@@ -21,14 +21,14 @@ const Navbar = () => {
         </Link>
 
         <div
-          className={`flex items-center justify-center gap-4 md:gap-6 lg:gap-8`}
+          className={`flex items-center justify-center gap-8 md:gap-6 lg:gap-8`}
         >
           {Routes.map((elem, index) => {
             return (
               <Link
                 key={index}
                 href={elem.href}
-                className={`duration-300 cursor-pointer 
+                className={`duration-300 cursor-pointer pb-1 
             ${
               router.pathname == `${elem.href}`
                 ? "text-primary border-primary border-b-2"
@@ -36,12 +36,20 @@ const Navbar = () => {
             } `}
                 title={elem.title}
               >
-                {elem.title}
+                <span className="hidden md:block lg:block">{elem.title}</span>
+                <span>
+                  {
+                    <elem.icon
+                      size={22}
+                      className="lg:hidden md:hidden block"
+                    />
+                  }
+                </span>
               </Link>
             );
           })}
 
-          <Button title="Get started" style={"text-[11px] p-2"} />
+          <Button title="Get started" style="text-[11px] p-2 hidden md:block" />
         </div>
       </div>
     </div>

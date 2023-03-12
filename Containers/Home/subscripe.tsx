@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Heading from "Components/UI/Heading";
 import Input from "Components/UI/Input";
 import { BiMailSend } from "react-icons/bi";
+import { FiSend } from "react-icons/fi";
 import Button from "Components/UI/Button";
 
 const Subscripe = () => {
@@ -18,7 +19,7 @@ const Subscripe = () => {
         />
       </div>
 
-      <div className="relative w-full h-fit mt-8">
+      <div className="relative w-full lg:w-9/12 mx-auto mt-8">
         <Input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -27,8 +28,12 @@ const Subscripe = () => {
           icon={<BiMailSend size={27} />}
         />
 
-        <div className="absolute w-fit text-[12px] top-[50%] translate-y-[-50%] right-[13.4%]">
-          <Button title="Subscribe Now" style="py-3" />
+        <div className="absolute w-fit text-[12px] top-[50%] translate-y-[-50%] right-[1.2%]">
+          <Button title="Subscribe Now" style="py-3 hidden md:block lg:block" />
+
+          <div className="bg-primary text-text_dark p-2 rounded-[15px] block lg:hidden md:hidden mr-1 cursor-pointer">
+            <FiSend size={20} />
+          </div>
         </div>
       </div>
     </div>

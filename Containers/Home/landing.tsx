@@ -15,7 +15,7 @@ const Landing = () => {
           additionalStyles="text-center !text-[#FFF]"
         />
 
-        <div className="mt-8">
+        <div className="w-full md:w-10/12 lg:w-9/12 mx-auto mt-8">
           <Input
             type={"search"}
             placeholder={"Search for Chalets to reserve!"}

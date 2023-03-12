@@ -37,7 +37,7 @@ const Popular = () => {
         })}
       </div>
 
-      <div className="mt-8 mx-auto w-3/12">
+      <div className="mt-8 w-3/12 whitespace-nowrap min-w-fit mx-auto ">
         <Button title={"Explore More"} />
       </div>
     </div>

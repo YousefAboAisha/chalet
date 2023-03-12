@@ -1,6 +1,6 @@
-import { AiOutlineHome } from "react-icons/ai"
-import { RxLayers } from "react-icons/rx"
-import { VscMailRead } from "react-icons/vsc"
+import { AiOutlineHome } from "react-icons/ai";
+import { RxLayers } from "react-icons/rx";
+import { VscMailRead } from "react-icons/vsc";
 
 export const Routes = [
   {
@@ -18,4 +18,4 @@ export const Routes = [
     href: "/about",
     icon: VscMailRead,
   },
-]
+];
