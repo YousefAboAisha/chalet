@@ -65,6 +65,7 @@ module.exports = {
       },
       backgroundImage: {
         "landing-image": "url('/landing.jpeg')",
+        "landing-image2": "url('/landing2.jpeg')",
       },
     },
   },

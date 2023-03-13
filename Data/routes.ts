@@ -1,5 +1,5 @@
 import { AiOutlineHome } from "react-icons/ai";
-import { RxLayers } from "react-icons/rx";
+import { MdOutlineImageSearch } from "react-icons/md";
 import { VscMailRead } from "react-icons/vsc";
 
 export const Routes = [
@@ -11,7 +11,7 @@ export const Routes = [
   {
     title: "Discover",
     href: "/discover",
-    icon: RxLayers,
+    icon: MdOutlineImageSearch,
   },
   {
     title: "About",

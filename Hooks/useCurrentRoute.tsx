@@ -5,6 +5,8 @@ const useCurrentRoute = () => {
   const [Title, setTitle] = useState("");
   const route = useRouter();
 
+  console.log(route);
+
   useEffect(() => {
     if (route.pathname == "/") {
       setTitle("Home");

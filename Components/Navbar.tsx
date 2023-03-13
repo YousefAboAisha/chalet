@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed w-full h-[70px] top-0 left-0 z-20 items-center bg-background_light text-text_light dark:bg-background_dark dark:text-text_dark duration-500 shadow-lg ${
+      className={`fixed w-full h-[70px] top-0 left-0 z-[10000] items-center bg-background_light text-text_light dark:bg-background_dark dark:text-text_dark duration-500 shadow-lg ${
         scrollDirection === "down" ? "" : ""
       } `}
     >

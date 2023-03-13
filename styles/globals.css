@@ -15,6 +15,10 @@
     @apply relative w-full mt-32 mx-auto;
   }
 
+  .image-clip {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%);
+  }
+
   html {
     @apply text-text_light;
   }
