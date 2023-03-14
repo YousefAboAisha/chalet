@@ -66,3 +66,8 @@ select {
   appearance: none;
   padding-right: 5px;
 }
+/* 
+.react-multi-carousel-dot .react-multi-carousel-dot--active {
+  accent-color: pink !important;
+  color: red;
+} */

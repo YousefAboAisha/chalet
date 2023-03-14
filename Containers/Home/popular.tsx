@@ -1,4 +1,4 @@
-import Slider from "Components/Carousel";
+import Slider from "Components/Slider";
 import Button from "Components/UI/Button";
 import CustomImage from "Components/UI/CustomImage";
 import Heading from "Components/UI/Heading";

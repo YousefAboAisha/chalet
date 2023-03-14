@@ -12,7 +12,7 @@ export const dummyData = [
     id: 3,
   },
   {
-    title: "Dair Al Balah",
+    title: "Dair Al Balahw",
     id: 4,
   },
 ];

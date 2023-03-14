@@ -19,9 +19,9 @@ const Menu = ({ isOpen, setIsOpen }: MenuType) => {
 
   return (
     <div
-      className={`absolute w-fit lg:max-w-[35%] top-10 right-10 bg-background_light dark:bg-background_dark
+      className={`w-[320px] top-10 right-0 bg-background_light dark:bg-background_dark
     z-[9999] border border-light dark:border-dark shadow-2xl p-4 rounded-lg ${
-      isOpen ? " opacity-100" : "opacity-0"
+      isOpen ? "absolute" : "hidden"
     } duration-300 `}
     >
       <FaTimes
@@ -68,8 +68,12 @@ const Menu = ({ isOpen, setIsOpen }: MenuType) => {
           />
         </div>
 
-        <div className="relative text-sm mt-2 w-6/12">
-          <Button onClick={() => setIsOpen(false)} title="Confirm" />
+        <div className="relative w-fit text-sm mt-1">
+          <Button
+            onClick={() => setIsOpen(false)}
+            title="Confirm"
+            style="py-2 px-3 text-[13px]"
+          />
         </div>
       </div>
     </div>

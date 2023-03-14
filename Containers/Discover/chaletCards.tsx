@@ -10,6 +10,7 @@ const ChaletCards = () => {
         {ChaletsData.map((elem, index) => {
           return (
             <Thumnail
+              id={index}
               key={index}
               src={elem.src}
               title={elem.title}
