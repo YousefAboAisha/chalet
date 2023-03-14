@@ -19,7 +19,7 @@ const Menu = ({ isOpen, setIsOpen }: MenuType) => {
 
   return (
     <div
-      className={`absolute w-[30%] top-10 right-10 bg-background_light dark:bg-background_dark
+      className={`absolute w-fit lg:max-w-[35%] top-10 right-10 bg-background_light dark:bg-background_dark
     z-[9999] border border-light dark:border-dark shadow-2xl p-4 rounded-lg ${
       isOpen ? " opacity-100" : "opacity-0"
     } duration-300 `}

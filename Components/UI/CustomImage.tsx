@@ -27,7 +27,7 @@ const CustomImage = ({
         width={width}
         height={height}
         alt={alt}
-        onError={() => setImg("/notFound.jpg")}
+        onError={() => setImg("/notFound.jpeg")}
         loading="lazy"
         className={`w-full h-full rounded-2xl ${className}`}
       />
