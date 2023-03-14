@@ -21,8 +21,8 @@ const Landing = () => {
             placeholder={"Search for Chalets to reserve!"}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            icon={<BsSearch size={24} />}
-            style="bg-background_light dark:bg-background_light !text-text_light !dark:text-text_dark"
+            icon={<BsSearch size={20} />}
+            style=""
           />
         </div>
       </div>

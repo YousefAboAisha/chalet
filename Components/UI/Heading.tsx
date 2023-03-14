@@ -19,7 +19,7 @@ const Heading = ({
 
       {details ? (
         <p
-          className={`text-sm text-center mx-auto font-normal mt-4 w-11/12 lg:w-6/12 opacity-90 ${detailsStyles}`}
+          className={`text-sm text-center mx-auto font-normal mt-4 w-11/12 lg:w-6/12 ${detailsStyles}`}
         >
           {details}
         </p>

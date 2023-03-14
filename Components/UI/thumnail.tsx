@@ -24,7 +24,7 @@ const Thumnail = ({ src, title, rate, info, price }: ThumnailType) => {
         />
       </div>
 
-      <div className="px-4 mt-2 text-text_light bg-background_light dark:text-text_dark dark:bg-background_dark">
+      <div className="px-4 mt-4 text-text_light bg-background_light dark:text-text_dark dark:bg-background_dark">
         <div className="flex flex-row items-center justify-between mb-2 font-bold">
           <h2>{title}</h2>
           <div className="flex gap-2 items-center">

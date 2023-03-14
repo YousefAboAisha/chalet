@@ -1,18 +1,18 @@
 export const dummyData = [
   {
-    title: "NEXT JS projects- CEO",
+    title: "Gaza",
     id: 1,
   },
   {
-    title: "Single page application- SPA",
+    title: "Rafah",
     id: 2,
   },
   {
-    title: "Personal Blogs",
+    title: "Beit Hanoon",
     id: 3,
   },
   {
-    title: "UI/UX Design",
+    title: "Dair Al Balah",
     id: 4,
   },
 ];

@@ -1,18 +1,18 @@
-import { useState } from "react"
-import { IoIosArrowDown } from "react-icons/io"
+import { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 
 type SelectProps = {
-  title: string
+  title: string;
   options: {
-    title: string
-    id: number
-  }[]
-  style?: string
-  icon?: JSX.Element
-} & React.ComponentProps<"select">
+    title: string;
+    id: number;
+  }[];
+  style?: string;
+  icon?: JSX.Element;
+} & React.ComponentProps<"select">;
 
 const Select = ({ title, options, icon, style, ...rest }: SelectProps) => {
-  const [IsActive, setIsActive] = useState(false)
+  const [IsActive, setIsActive] = useState(false);
 
   return (
     <div className="relative dark:bg-background_dark bg-background_light">
@@ -30,12 +30,12 @@ const Select = ({ title, options, icon, style, ...rest }: SelectProps) => {
       </div>
 
       <select
-        className={`relative h-[56px] pl-12 border border-light dark:border-dark text-text_light dark:text-text_dark rounded-[8px] outline-none duration-300 w-full focus:valid:border-primary focus:border-primary disabled:cursor-not-allowed bg-transparent cursor-pointer ${style}`}
+        className={`relative h-[56px] pl-10 border border-light dark:border-dark text-text_light dark:text-text_dark rounded-[8px] outline-none duration-300 w-full focus:valid:border-primary focus:border-primary disabled:cursor-not-allowed bg-transparent cursor-pointer ${style}`}
         {...rest}
         onFocus={() => setIsActive(true)}
         onBlur={() => setIsActive(false)}
       >
-        <option value="" disabled hidden>
+        <option value="" disabled hidden selected>
           {title}
         </option>
 
@@ -49,11 +49,11 @@ const Select = ({ title, options, icon, style, ...rest }: SelectProps) => {
             >
               {elem.title}
             </option>
-          )
+          );
         })}
       </select>
     </div>
-  )
-}
+  );
+};
 
-export default Select
+export default Select;

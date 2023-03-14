@@ -28,7 +28,7 @@ module.exports = {
         // Secondary theme variables
         secondary: "#003566",
 
-        border_dark: "#dddddd24",
+        dark: "#dddddd24",
 
         // Fixed backgroundColor in both themes
         // background: "#181D31",
@@ -41,7 +41,7 @@ module.exports = {
 
       borderColor: {
         light: "#181D3115",
-        dark: "#dddddd1a",
+        dark: "#dddddd24",
       },
 
       keyframes: {

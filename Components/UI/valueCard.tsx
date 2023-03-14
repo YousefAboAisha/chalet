@@ -9,8 +9,8 @@ type SkillCardProps = {
 
 const ValueCard = ({ Icon, title, details }: SkillCardProps) => {
   return (
-    <div className="relative flex flex-col justify-center items-center gap-1 rounded-xl p-4 text-text_light bg-background_light dark:text-text_dark dark:bg-background_dark border border-border_dark duration-500 shadow-lg hover:border hover:border-primary hover:-translate-y-1">
-      <div className="border border-border_dark p-2 rounded-xl mt-4">
+    <div className="relative flex flex-col justify-center items-center gap-1 rounded-xl p-4 text-text_light bg-background_light dark:text-text_dark dark:bg-background_dark border border-dark duration-500 shadow-lg hover:border hover:border-primary hover:-translate-y-1">
+      <div className="border border-dark p-2 rounded-xl mt-4">
         <Icon size={50} />
       </div>
 
