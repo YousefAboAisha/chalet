@@ -5,14 +5,31 @@ import { StarsRating } from "Components/UI/StarsRating";
 import Tag from "Components/UI/Tag";
 import React from "react";
 import { BiCoinStack, BiCommentDetail } from "react-icons/bi";
+import { BsDisplay } from "react-icons/bs";
+import { FaSwimmingPool } from "react-icons/fa";
 import { FiMapPin, FiWifi } from "react-icons/fi";
+import { GiBarbecue } from "react-icons/gi";
+import { TbSoccerField, TbToolsKitchen } from "react-icons/tb";
+import ReactStars from "react-stars";
+import Review from "./review";
 
 const ChaletDetails = () => {
   return (
     <div className="relative mt-8 text-text_light dark:text-text_dark">
       <h2 className="font-bold text-3xl">Chalet Name</h2>
-      <StarsRating />
+      {/* <div className="flex gap-2 items-center my-1"> */}
+      <ReactStars
+        count={5}
+        value={4}
+        // onChange={() => setValue(value)}
+        size={14}
+        color2={"#D61355"}
+        color1={"#DDD"}
+        edit={false}
+      />
 
+      <div className="text-[12px]">4 out of (5)</div>
+      {/* </div> */}
       <BreakLine />
 
       <div className="flex flex-row gap-6 items-center mt-4">
@@ -21,13 +38,11 @@ const ChaletDetails = () => {
         <IconTag title="No reviews" Icon={BiCommentDetail} />
       </div>
 
-      <div className="flex flex-row gap-2 mt-2">
-        <div className="flex gap-2 items-center">
-          <Tag title="Summer" />
-          <Tag title="Swimming" />
-          <Tag title="Intertainment" />
-          <Tag title="Games" />
-        </div>
+      <div className="flex flex-row gap-2 mt-4 overflow-x-scroll hidden-scroll ">
+        <Tag title="Summer" />
+        <Tag title="Swimming" />
+        <Tag title="Intertainment" />
+        <Tag title="Games" />
       </div>
 
       <p className="mt-6 opacity-90">
@@ -42,7 +57,7 @@ const ChaletDetails = () => {
         of Lorem Ipsum.
       </p>
 
-      <div className="grid mt-4 grid-cols-2 md:grid-cols-2  lg:grid-cols-3 gap-2">
+      <div className="grid mt-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2">
         <FeatureCard
           active={true}
           title="WI-FI"
@@ -52,43 +67,45 @@ const ChaletDetails = () => {
 
         <FeatureCard
           active={false}
-          title="WI-FI"
-          Icon={FiWifi}
-          details="Strong Wifi connection"
+          title="Barbecue"
+          Icon={GiBarbecue}
+          details="Modern barbecue tools"
         />
 
         <FeatureCard
           active={true}
-          title="WI-FI"
-          Icon={FiWifi}
-          details="Strong Wifi connection"
+          title="Kitchen"
+          Icon={TbToolsKitchen}
+          details="Fully customized kithcen"
         />
 
         <FeatureCard
           active={false}
-          title="WI-FI"
-          Icon={FiWifi}
-          details="Strong Wifi connection"
+          title="Swimming Pool"
+          Icon={FaSwimmingPool}
+          details="Wide & clean swimming pool"
         />
 
         <FeatureCard
           active={false}
-          title="WI-FI"
-          Icon={FiWifi}
-          details="Strong Wifi connection"
+          title="Playgrounds"
+          Icon={TbSoccerField}
+          details="Playgrounds for Basket & Football"
         />
 
         <FeatureCard
           active={true}
-          title="WI-FI"
-          Icon={FiWifi}
-          details="Strong Wifi connection"
+          title="TV show"
+          Icon={BsDisplay}
+          details="High resolution & 4k screens"
         />
       </div>
 
       <div className="mt-8">
         <h2 className="font-bold text-3xl">Reviews</h2>
         <BreakLine />
+
+        <Review />
       </div>
     </div>
   );

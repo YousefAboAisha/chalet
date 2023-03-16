@@ -11,19 +11,17 @@ type FeatureCardType = {
 const FeatureCard = ({ active, Icon, title, details }: FeatureCardType) => {
   let isActive = active ? "text-[#44bd32]" : "text-[#F00]";
   let opacity = active ? "opacity-100" : "opacity-50";
-  console.log(isActive);
+  // console.log(isActive);
 
   return (
     <div
-      className={`flex gap-4 items-center text-text_light dark:text-text_dark border border-light dark:border-dark p-4 rounded-2xl shadow-sm ${opacity}`}
+      className={`relative flex flex-col gap-2 items-center justify-center text-text_light dark:text-text_dark border border-light dark:border-dark p-4 rounded-2xl shadow-sm ${opacity}`}
     >
       <Icon size={30} />
-      <div className="flex flex-col">
-        <span className="font-bold text-sm">{title}</span>
-        <p className="text-[12px] opacity-80">{details}</p>
-      </div>
+      <span className="font-bold text-sm">{title}</span>
+      <p className="text-[12px] opacity-80">{details}.</p>
 
-      <GoPrimitiveDot className={isActive} />
+      <GoPrimitiveDot className={`${isActive} w-fit absolute top-3 right-3`} />
     </div>
   );
 };

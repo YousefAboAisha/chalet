@@ -36,6 +36,21 @@
   ::-webkit-scrollbar-thumb {
     @apply bg-primary rounded-[50px];
   }
+
+  /* Hidden scrollbar */
+  .hidden-scroll::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  /* Track */
+  .hidden-scroll::-webkit-scrollbar-track {
+    @apply bg-transparent hidden;
+  }
+
+  /* Handle */
+  .hidden-scroll::-webkit-scrollbar-thumb {
+    @apply hidden;
+  }
 }
 
 * {

@@ -9,7 +9,9 @@ const Chalet = () => {
     <div className="relative container mt-28">
       <div className="container">
         <HeadingTitle />
+
         <SingleSlider />
+
         <ChaletDetails />
       </div>
     </div>
