@@ -1,3 +1,4 @@
+import Button from "Components/UI/Button";
 import { StarsRating } from "Components/UI/StarsRating";
 import TextArea from "Components/UI/TextArea";
 import React, { useState } from "react";
@@ -20,7 +21,7 @@ const Review = () => {
         style=""
       />
 
-      <div className="flex gap-2 items-center mt-4">
+      <div className="flex gap-2 items-center mt-2">
         <ReactStars
           count={starsNum}
           value={rateValue}
@@ -36,12 +37,19 @@ const Review = () => {
         </div>
       </div>
 
-      <div className="flex flex-col max-h-[200px] gap-4 pr-6 py-4 mt-4 overflow-y-auto">
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
+      <div className="mt-2 w-2/12 text-sm whitespace-nowrap min-w-fit">
+        <Button title={"Send"} />
+      </div>
+
+      <div className="mt-8">
+        {/* <h2 className="text-2xl font-bold">Feedbacks</h2> */}
+        <div className="flex flex-col max-h-[200px] gap-4 pr-6 py-4 overflow-y-auto">
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+          <ReviewCard />
+        </div>
       </div>
     </div>
   );

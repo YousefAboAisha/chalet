@@ -17,19 +17,20 @@ const ChaletDetails = () => {
   return (
     <div className="relative mt-8 text-text_light dark:text-text_dark">
       <h2 className="font-bold text-3xl">Chalet Name</h2>
-      {/* <div className="flex gap-2 items-center my-1"> */}
-      <ReactStars
-        count={5}
-        value={4}
-        // onChange={() => setValue(value)}
-        size={14}
-        color2={"#D61355"}
-        color1={"#DDD"}
-        edit={false}
-      />
+      <div className="flex gap-2 items-center my-1">
+        <ReactStars
+          count={5}
+          value={4}
+          // onChange={() => setValue(value)}
+          size={14}
+          color2={"#D61355"}
+          color1={"#DDD"}
+          edit={false}
+        />
 
-      <div className="text-[12px]">4 out of (5)</div>
-      {/* </div> */}
+        <div className="text-[12px]">4 out of (5)</div>
+      </div>
+
       <BreakLine />
 
       <div className="flex flex-row gap-6 items-center mt-4">

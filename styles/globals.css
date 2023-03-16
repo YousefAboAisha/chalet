@@ -29,7 +29,7 @@
 
   /* Track */
   ::-webkit-scrollbar-track {
-    @apply bg-background_light;
+    @apply bg-transparent;
   }
 
   /* Handle */
