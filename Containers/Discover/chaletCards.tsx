@@ -1,6 +1,6 @@
 import React from "react";
 import { ChaletsData } from "Data/chaletsData";
-import Button from "Components/UI/Inputs/button";
+import Button from "Components/UI/Inputs/Button";
 import Thumnail from "Components/UI/Cards/Thumnail";
 
 const ChaletCards = () => {
