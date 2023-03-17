@@ -1,7 +1,7 @@
-import Slider from "Components/UI/Sliders/MultiSlider";
-import Button from "Components/UI/Inputs/Button";
-import CustomImage from "Components/UI/Cards/CustomImage";
-import Heading from "Components/UI/Typography/Heading";
+import Slider from "Components/UI/Sliders/multiSlider";
+import Button from "Components/UI/Inputs/button";
+import CustomImage from "Components/UI/Cards/customImage";
+import Heading from "Components/UI/Typography/heading";
 import { PopularData } from "Data/popularData";
 import React from "react";
 import { FiMapPin } from "react-icons/fi";

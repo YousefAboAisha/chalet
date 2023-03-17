@@ -1,9 +1,9 @@
-import SingleSlider from "Components/UI/Sliders/SingleSlider";
-import Slider from "Components/UI/Sliders/MultiSlider";
-import HeadingTitle from "Components/UI/Typography/HeadingTitle";
+import Slider from "Components/UI/Sliders/multiSlider";
 import Head from "next/head";
 import React from "react";
 import ChaletDetails from "Containers/Discover/ChaletDetails";
+import HeadingTitle from "Components/UI/Typography/HeadingTitle";
+import SingleSlider from "Components/UI/Sliders/SingleSlider";
 
 const Chalet = () => {
   return (

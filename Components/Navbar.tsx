@@ -3,7 +3,7 @@ import { useScrollDirection } from "Hooks/useScrollDirection";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Button from "./UI/Inputs/Button";
+import Button from "./UI/Inputs/button";
 
 const Navbar = () => {
   const router = useRouter();

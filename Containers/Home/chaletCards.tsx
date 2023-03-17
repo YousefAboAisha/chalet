@@ -1,6 +1,6 @@
-import Button from "Components/UI/Inputs/Button";
-import Thumnail from "Components/UI/Cards/Thumnail";
-import Heading from "Components/UI/Typography/Heading";
+import Button from "Components/UI/Inputs/button";
+import Thumnail from "Components/UI/Cards/thumnail";
+import Heading from "Components/UI/Typography/heading";
 import React from "react";
 import { ChaletsData } from "Data/chaletsData";
 

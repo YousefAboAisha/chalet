@@ -1,11 +1,10 @@
-import Select from "Components/UI/Inputs/Select";
 import { dummyData } from "Data/dummyData";
 import { GoSettings } from "react-icons/go";
 import React, { useState } from "react";
-import Input from "Components/UI/Inputs/Input";
 import { BsSearch } from "react-icons/bs";
-import Modal from "Components/UI/Modals/Modal";
 import Menu from "Components/UI/Modals/Menu";
+import Modal from "Components/UI/Modals/Modal";
+import Input from "Components/UI/Inputs/input";
 
 const Filters = () => {
   const [query, setQuery] = useState("");

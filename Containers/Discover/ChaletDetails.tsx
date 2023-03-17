@@ -1,7 +1,6 @@
-import BreakLine from "Components/UI/Utils/BreakLine";
 import FeatureCard from "Components/UI/Cards/FeatureCard";
+import BreakLine from "Components/UI/Utils/BreakLine";
 import IconTag from "Components/UI/Utils/IconTag";
-import { StarsRating } from "Components/UI/Utils/StarsRating";
 import Tag from "Components/UI/Utils/Tag";
 import React from "react";
 import { BiCoinStack, BiCommentDetail } from "react-icons/bi";
