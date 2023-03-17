@@ -1,16 +1,16 @@
-import Button from "Components/UI/Button";
-import { StarsRating } from "Components/UI/StarsRating";
-import TextArea from "Components/UI/TextArea";
+import Button from "Components/UI/Inputs/Button";
+import { StarsRating } from "Components/UI/Utils/StarsRating";
+import TextArea from "Components/UI/Inputs/TextArea";
 import React, { useState } from "react";
 import ReactStars from "react-stars";
-import ReviewCard from "./reviewCard";
+import ReviewCard from "../../Components/UI/Cards/reviewCard";
 
 const Review = () => {
   const starsNum = 5;
   const [textValue, setTextValue] = useState("");
   const [rateValue, setRateValue] = useState(0);
 
-  console.log(rateValue);
+  // console.log(rateValue);
 
   return (
     <div className="relative flex flex-col gap-2 mt-6">
@@ -37,12 +37,11 @@ const Review = () => {
         </div>
       </div>
 
-      <div className="mt-2 w-2/12 text-sm whitespace-nowrap min-w-fit">
+      <div className="mt-2 w-3/12 lg:w-2/12 text-sm whitespace-nowrap min-w-fit">
         <Button title={"Send"} />
       </div>
 
       <div className="mt-8">
-        {/* <h2 className="text-2xl font-bold">Feedbacks</h2> */}
         <div className="flex flex-col max-h-[200px] gap-4 pr-6 py-4 overflow-y-auto">
           <ReviewCard />
           <ReviewCard />

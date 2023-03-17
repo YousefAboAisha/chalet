@@ -1,5 +1,5 @@
-import CustomImage from "Components/UI/CustomImage";
-import { StarsRating } from "Components/UI/StarsRating";
+import CustomImage from "Components/UI/Cards/CustomImage";
+import { StarsRating } from "Components/UI/Utils/StarsRating";
 import React from "react";
 
 const ReviewCard = () => {

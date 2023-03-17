@@ -2,9 +2,9 @@ import { dummyData } from "Data/dummyData";
 import React, { Dispatch, SetStateAction, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FiDollarSign, FiMap, FiMapPin } from "react-icons/fi";
-import Button from "./Button";
-import Input from "./Input";
-import Select from "./Select";
+import Button from "../Inputs/Button";
+import Input from "../Inputs/Input";
+import Select from "../Inputs/Select";
 
 type MenuType = {
   isOpen: boolean;

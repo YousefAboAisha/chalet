@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { FooterData } from "../Data/FooterData";
 import { Social } from "../Data/Social";
-import CustomImage from "./UI/CustomImage";
-import FooterCard from "./UI/FooterCard";
+import CustomImage from "./UI/Cards/CustomImage";
+import FooterCard from "./UI/Cards/FooterCard";
 
 const Footer = () => {
   const date = new Date().getFullYear();

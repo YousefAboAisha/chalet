@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Heading from "Components/UI/Heading";
-import Input from "Components/UI/Input";
+import Heading from "Components/UI/Typography/Heading";
+import Input from "Components/UI/Inputs/Input";
 import { BiMailSend } from "react-icons/bi";
 import { FiSend } from "react-icons/fi";
-import Button from "Components/UI/Button";
+import Button from "Components/UI/Inputs/Button";
 
 const Subscripe = () => {
   const [email, setEmail] = useState("");

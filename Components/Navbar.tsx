@@ -3,11 +3,13 @@ import { useScrollDirection } from "Hooks/useScrollDirection";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Button from "./UI/Button";
+import Button from "./UI/Inputs/Button";
 
 const Navbar = () => {
   const router = useRouter();
   const scrollDirection = useScrollDirection();
+
+  // console.log("This is router", router);
 
   return (
     <div
@@ -30,7 +32,7 @@ const Navbar = () => {
                 href={elem.href}
                 className={`duration-300 cursor-pointer pb-1 
             ${
-              router.pathname == `${elem.href}`
+              router.pathname == `${elem.path}`
                 ? "text-primary border-primary border-b-2"
                 : ""
             } `}

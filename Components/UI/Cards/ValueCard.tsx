@@ -1,4 +1,3 @@
-import Image, { StaticImageData } from "next/image";
 import { IconType } from "react-icons";
 
 type SkillCardProps = {

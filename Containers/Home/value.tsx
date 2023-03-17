@@ -1,5 +1,5 @@
-import Heading from "Components/UI/Heading";
-import ValueCard from "Components/UI/valueCard";
+import ValueCard from "Components/UI/Cards/valueCard";
+import Heading from "Components/UI/Typography/Heading";
 import { ValueData } from "Data/valueData";
 import React from "react";
 

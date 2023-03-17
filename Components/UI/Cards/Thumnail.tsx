@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { BsStarFill } from "react-icons/bs";
-import Button from "./Button";
+import Button from "../Inputs/Button";
 import CustomImage from "./CustomImage";
 
 type ThumnailType = {

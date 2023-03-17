@@ -1,5 +1,5 @@
-import Heading from "Components/UI/Heading";
-import Input from "Components/UI/Input";
+import Heading from "Components/UI/Typography/Heading";
+import Input from "Components/UI/Inputs/Input";
 import React, { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 
