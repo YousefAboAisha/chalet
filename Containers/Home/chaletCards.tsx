@@ -1,8 +1,8 @@
-import Button from "Components/UI/Inputs/button";
-import Thumnail from "Components/UI/Cards/thumnail";
-import Heading from "Components/UI/Typography/heading";
+import Button from "Components/UI/Inputs/Button";
 import React from "react";
 import { ChaletsData } from "Data/chaletsData";
+import Heading from "Components/UI/Typography/Heading";
+import Thumnail from "Components/UI/Cards/Thumnail";
 
 const ChaletCards = () => {
   return (

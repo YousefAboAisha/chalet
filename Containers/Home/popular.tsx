@@ -1,10 +1,6 @@
-import Slider from "Components/UI/Sliders/multiSlider";
-import Button from "Components/UI/Inputs/button";
-import CustomImage from "Components/UI/Cards/customImage";
-import Heading from "Components/UI/Typography/heading";
-import { PopularData } from "Data/popularData";
+import Slider from "Components/UI/Sliders/MultiSlider";
+import Heading from "Components/UI/Typography/Heading";
 import React from "react";
-import { FiMapPin } from "react-icons/fi";
 
 const Popular = () => {
   return (

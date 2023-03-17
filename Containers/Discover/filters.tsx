@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import Menu from "Components/UI/Modals/Menu";
 import Modal from "Components/UI/Modals/Modal";
-import Input from "Components/UI/Inputs/input";
+import Input from "Components/UI/Inputs/Input";
 
 const Filters = () => {
   const [query, setQuery] = useState("");

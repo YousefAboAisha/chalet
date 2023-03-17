@@ -1,10 +1,9 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Link from "next/link";
-import Spinner from "../Utils/spinner";
 import { PopularData } from "Data/popularData";
-import CustomImage from "../Cards/customImage";
 import { FiMapPin } from "react-icons/fi";
+import CustomImage from "../Cards/CustomImage";
 
 const responsive = {
   superLargeDesktop: {

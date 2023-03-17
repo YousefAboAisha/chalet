@@ -1,6 +1,5 @@
 import Button from "Components/UI/Inputs/button";
-import { StarsRating } from "Components/UI/Utils/starsRating";
-import TextArea from "Components/UI/Inputs/textArea";
+import TextArea from "Components/UI/Inputs/TextArea";
 import React, { useState } from "react";
 import ReactStars from "react-stars";
 import ReviewCard from "../../Components/UI/Cards/reviewCard";

@@ -1,4 +1,3 @@
-import Slider from "Components/UI/Sliders/multiSlider";
 import Head from "next/head";
 import React from "react";
 import ChaletDetails from "Containers/Discover/ChaletDetails";

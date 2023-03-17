@@ -2,8 +2,7 @@ import { Routes } from "Data/routes";
 import { useScrollDirection } from "Hooks/useScrollDirection";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState } from "react";
-import Button from "./UI/Inputs/button";
+import Button from "./UI/Inputs/Button";
 
 const Navbar = () => {
   const router = useRouter();

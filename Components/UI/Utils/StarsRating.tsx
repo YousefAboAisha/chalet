@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ReactStars from "react-stars";
 
 export const StarsRating = () => {

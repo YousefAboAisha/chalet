@@ -1,10 +1,9 @@
-import React from "react"
-import { IoMdCheckmarkCircleOutline } from "react-icons/io"
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 type SnackbarProps = {
-  message: string
-  IsActive: boolean
-}
+  message: string;
+  IsActive: boolean;
+};
 
 const Snackbar = ({ message, IsActive }: SnackbarProps) => {
   return (
@@ -16,7 +15,7 @@ const Snackbar = ({ message, IsActive }: SnackbarProps) => {
       <IoMdCheckmarkCircleOutline size={23} />
       <span className="font-secondary">{message}</span>
     </div>
-  )
-}
+  );
+};
 
-export default Snackbar
+export default Snackbar;

@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
 const HeadingTitle = () => {

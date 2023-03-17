@@ -1,7 +1,5 @@
-import Heading from "Components/UI/Typography/heading";
-import Input from "Components/UI/Inputs/input";
+import Heading from "Components/UI/Typography/Heading";
 import React, { useState } from "react";
-import { BsSearch } from "react-icons/bs";
 
 const Landing = () => {
   const [query, setQuery] = useState("");
