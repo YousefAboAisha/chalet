@@ -1,4 +1,4 @@
-import Button from "Components/UI/Inputs/button";
+import Button from "Components/UI/Inputs/Button";
 import TextArea from "Components/UI/Inputs/TextArea";
 import React, { useState } from "react";
 import ReactStars from "react-stars";

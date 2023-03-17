@@ -1,4 +1,3 @@
-import { dummyData } from "Data/dummyData";
 import { GoSettings } from "react-icons/go";
 import React, { useState } from "react";
 import { BsSearch } from "react-icons/bs";
