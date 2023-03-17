@@ -3,7 +3,7 @@ import React from "react";
 import { FooterData } from "../Data/FooterData";
 import { Social } from "../Data/Social";
 import CustomImage from "./UI/Cards/customImage";
-import FooterCard from "./UI/Cards/FooterCard";
+import FooterCard from "./UI/Cards/footerCard";
 
 const Footer = () => {
   const date = new Date().getFullYear();
