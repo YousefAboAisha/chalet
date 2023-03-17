@@ -19,10 +19,9 @@ const Menu = ({ isOpen, setIsOpen }: MenuType) => {
 
   return (
     <div
-      className={`w-[320px] top-10 right-0 bg-background_light dark:bg-background_dark
-    z-[9999] border border-light dark:border-dark shadow-2xl p-4 rounded-lg ${
-      isOpen ? "absolute" : "hidden"
-    } duration-300 `}
+      className={`w-[320px] top-10 right-0 full-theme z-[9999] border shadow-2xl p-4 rounded-lg ${
+        isOpen ? "absolute" : "hidden"
+      } duration-300 `}
     >
       <FaTimes
         size={16}

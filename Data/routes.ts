@@ -11,13 +11,13 @@ export const Routes = [
   },
   {
     title: "Discover",
-    href: "discover",
+    href: "/discover",
     icon: MdOutlineImageSearch,
     path: "/[discover]",
   },
   {
     title: "About",
-    href: "about",
+    href: "/about",
     icon: VscMailRead,
     path: "/about",
   },

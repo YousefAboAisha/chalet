@@ -14,7 +14,7 @@ const about = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div>About us</div>
+      <div>About us US</div>
     </>
   );
 };

@@ -19,6 +19,21 @@
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%);
   }
 
+  .bg-theme {
+    @apply bg-background_light dark:bg-background_dark;
+  }
+
+  .text-theme {
+    @apply text-text_light dark:text-text_dark;
+  }
+
+  .border-theme {
+    @apply border border-light dark:border-dark;
+  }
+  .full-theme {
+    @apply bg-background_light dark:bg-background_dark text-text_light dark:text-text_dark border border-light dark:border-dark;
+  }
+
   html {
     @apply text-text_light;
   }

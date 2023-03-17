@@ -15,7 +15,7 @@ const Select = ({ title, options, icon, style, ...rest }: SelectProps) => {
   const [IsActive, setIsActive] = useState(false);
 
   return (
-    <div className="relative dark:bg-background_dark bg-background_light">
+    <div className="relative bg-theme">
       <div className="absolute flex justify-center p-2 rounded-l-md items-center left-1 top-[50%] translate-y-[-50%] h-full border-none outline-none text-text_light dark:text-white">
         {icon}
       </div>
@@ -43,7 +43,7 @@ const Select = ({ title, options, icon, style, ...rest }: SelectProps) => {
           return (
             <option
               key={elem.id}
-              className="dark:bg-background_dark bg-background_light p-2"
+              className="bg-theme p-2"
               value={elem.id}
               onChange={() => setIsActive(false)}
             >

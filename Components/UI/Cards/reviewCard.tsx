@@ -4,7 +4,7 @@ import React from "react";
 
 const ReviewCard = () => {
   return (
-    <div className="relative w-full flex flex-col gap-1 p-4 bg-background_light dark:bg-background_dark border border-light dark:border-dark rounded-[30px] rounded-tl-sm ">
+    <div className="relative w-full flex flex-col gap-1 p-4 full-theme rounded-[30px] rounded-tl-sm ">
       <div className="flex items-center gap-6">
         <h2>Yousef Aisha</h2>
         <StarsRating />
