@@ -57,7 +57,7 @@ const ChaletDetails = () => {
         of Lorem Ipsum.
       </p>
 
-      <div className="grid mt-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="grid mt-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         <FeatureCard
           active={true}
           title="WI-FI"
@@ -98,6 +98,20 @@ const ChaletDetails = () => {
           title="TV show"
           Icon={BsDisplay}
           details="High resolution & 4k screens"
+        />
+
+        <FeatureCard
+          active={true}
+          title="WI-FI"
+          Icon={FiWifi}
+          details="Strong Wifi connection"
+        />
+
+        <FeatureCard
+          active={false}
+          title="Barbecue"
+          Icon={GiBarbecue}
+          details="Modern barbecue tools"
         />
       </div>
 

@@ -15,7 +15,7 @@ export const StarsRating = () => {
         edit={false}
       />
 
-      <div className="text-[12px]">4 out of 5</div>
+      <div className="text-[12px]">4 out of (5)</div>
     </div>
   );
 };

@@ -15,11 +15,11 @@ const FeatureCard = ({ active, Icon, title, details }: FeatureCardType) => {
 
   return (
     <div
-      className={`relative flex flex-col gap-2 items-center justify-center bg-background_light dark:bg-background_dark text-text_light dark:text-text_dark border border-light dark:border-dark p-4 rounded-2xl shadow-sm ${opacity}`}
+      className={`relative flex flex-col gap-2 items-center justify-center bg-background_light dark:bg-background_dark text-text_light dark:text-text_dark border border-light dark:border-dark p-3 rounded-2xl shadow-sm ${opacity}`}
     >
       <Icon size={30} />
       <span className="font-bold text-sm">{title}</span>
-      <p className="text-[12px] opacity-80">{details}.</p>
+      <p className="text-[12px] opacity-80 text-center">{details}.</p>
 
       <GoPrimitiveDot className={`${isActive} w-fit absolute top-3 right-3`} />
     </div>

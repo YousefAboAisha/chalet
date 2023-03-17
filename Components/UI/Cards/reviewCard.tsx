@@ -4,9 +4,9 @@ import React from "react";
 
 const ReviewCard = () => {
   return (
-    <div className="relative w-full flex flex-col gap-1 p-4 full-theme rounded-[30px] rounded-tl-sm ">
-      <div className="flex items-center gap-6">
-        <h2>Yousef Aisha</h2>
+    <div className="relative w-full flex flex-col gap-1 p-4 full-theme rounded-[30px] rounded-tl-sm shadow-sm">
+      <div className="flex items-center gap-2">
+        <h2 className="font-bold">Yousef Aisha</h2>|
         <StarsRating />
       </div>
 

@@ -36,7 +36,7 @@ const Review = () => {
         </div>
       </div>
 
-      <div className="mt-2 w-3/12 lg:w-2/12 text-sm whitespace-nowrap min-w-fit">
+      <div className="w-3/12 lg:w-2/12 text-sm whitespace-nowrap min-w-fit">
         <Button title={"Send"} />
       </div>
 
