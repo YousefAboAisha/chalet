@@ -28,8 +28,8 @@ const Thumnail = ({ id, src, title, rate, info, price }: ThumnailType) => {
         </div>
 
         <div className="px-4 mt-4 bg-theme text-theme">
-          <div className="flex flex-row items-center justify-between mb-2 font-bold">
-            <h2>{title}</h2>
+          <div className="flex flex-row items-center justify-between mb-2 font-bold gap-4">
+            <h2 className="truncate">{title}</h2>
             <div className="flex gap-2 items-center">
               <BsStarFill className="text-[#FFC312]" />
               <span>{rate}</span>

@@ -14,14 +14,12 @@ const Chalet = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className="relative container mt-28">
-        <div className="container">
-          <HeadingTitle />
+      <div className="relative w-11/12 md:w-8/12 lg:w-6/12 mx-auto mt-28">
+        <HeadingTitle />
 
-          <SingleSlider />
+        <SingleSlider />
 
-          <ChaletDetails />
-        </div>
+        <ChaletDetails />
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { ChaletsData } from "Data/chaletsData";
 import Button from "Components/UI/Inputs/Button";
-import Thumnail from "Components/UI/Cards/Thumnail";
+import Thumnail from "Components/UI/Cards/Thumbnail";
 
 const ChaletCards = () => {
   return (

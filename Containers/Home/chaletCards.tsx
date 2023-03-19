@@ -2,7 +2,7 @@ import Button from "Components/UI/Inputs/Button";
 import React from "react";
 import { ChaletsData } from "Data/chaletsData";
 import Heading from "Components/UI/Typography/Heading";
-import Thumnail from "Components/UI/Cards/Thumnail";
+import Thumnail from "Components/UI/Cards/Thumbnail";
 
 const ChaletCards = () => {
   return (

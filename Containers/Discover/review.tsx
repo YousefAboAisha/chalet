@@ -1,5 +1,6 @@
 import Button from "Components/UI/Inputs/Button";
 import TextArea from "Components/UI/Inputs/TextArea";
+import BreakLine from "Components/UI/Utils/BreakLine";
 import React, { useState } from "react";
 import ReactStars from "react-stars";
 import ReviewCard from "../../Components/UI/Cards/reviewCard";
@@ -40,14 +41,19 @@ const Review = () => {
         <Button title={"Send"} />
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 ">
         <div className="flex flex-col max-h-[200px] gap-4 pr-6 py-4 overflow-y-auto">
           <ReviewCard />
           <ReviewCard />
           <ReviewCard />
           <ReviewCard />
           <ReviewCard />
+
+          <h2 className="text-center text-sm mx-auto cursor-pointer underline my-2 text-primary">
+            Load More
+          </h2>
         </div>
+        <BreakLine />
       </div>
     </div>
   );
