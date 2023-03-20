@@ -12,15 +12,16 @@ const CustomTooltip = ({ textTitle, toolTipTitle, id }: CustomTooltipType) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="text-theme">
-      <span
+    <div className="relative border-theme bg-primary w-[10px] h-[10px] min-w-[10px] min-h-[10px] rounded-sm">
+      <div
         onMouseEnter={() => setIsOpen(true)}
         onClick={() => setIsOpen(false)}
         data-tooltip-id={id}
         data-tooltip-content={toolTipTitle}
       >
         {textTitle}
-      </span>
+      </div>
+
       <Tooltip
         isOpen={isOpen}
         id={id}

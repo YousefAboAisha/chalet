@@ -22,9 +22,10 @@ const Home = () => {
       <Landing />
       <div className="container overflow-hidden">
         <Popular />
+        <Popular />
         <Value />
-        <VideoHero />
         <ChaletCards />
+        <VideoHero />
         <Subscripe />
       </div>
     </>

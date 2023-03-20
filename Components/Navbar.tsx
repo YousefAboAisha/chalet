@@ -50,7 +50,12 @@ const Navbar = () => {
             );
           })}
 
-          <Button title="Get started" style="text-[11px] p-2 hidden md:block" />
+          <Link href={"/discover"}>
+            <Button
+              title="Get started"
+              style="text-[11px] p-2 hidden md:block"
+            />
+          </Link>
         </div>
       </div>
     </div>
