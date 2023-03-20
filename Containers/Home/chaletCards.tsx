@@ -3,6 +3,7 @@ import React from "react";
 import { ChaletsData } from "Data/chaletsData";
 import Heading from "Components/UI/Typography/Heading";
 import Thumnail from "Components/UI/Cards/Thumbnail";
+import Link from "next/link";
 
 const ChaletCards = () => {
   return (
@@ -16,7 +17,7 @@ const ChaletCards = () => {
       </div>
 
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {ChaletsData.map((elem, index) => {
+        {ChaletsData.slice(0, 6).map((elem, index) => {
           return (
             <Thumnail
               id={index}
@@ -30,10 +31,11 @@ const ChaletCards = () => {
           );
         })}
       </div>
-
-      <div className="mt-8 w-3/12 whitespace-nowrap min-w-fit mx-auto ">
-        <Button title={"Explore More"} />
-      </div>
+      <Link href={"/discover"}>
+        <div className="mt-8 w-3/12 whitespace-nowrap min-w-fit mx-auto">
+          <Button title={"Explore More"} />
+        </div>
+      </Link>
     </div>
   );
 };

@@ -29,7 +29,9 @@ const CustomImage = ({
         alt={alt}
         onError={() => setImg("/notFound.jpeg")}
         loading="lazy"
-        className={`w-full h-full rounded-2xl ${className}`}
+        className={`w-full h-full rounded-2xl duration-300 ${className}`}
+        blurDataURL="https://reactnative-examples.com/wp-content/uploads/2022/02/default-loading-image.png"
+        placeholder="blur"
       />
     </div>
   );

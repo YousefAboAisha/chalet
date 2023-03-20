@@ -19,7 +19,7 @@ const Menu = ({ isOpen, setIsOpen }: MenuType) => {
 
   return (
     <div
-      className={`w-[320px] top-10 right-0 full-theme z-[9999] border shadow-2xl p-4 rounded-lg ${
+      className={`w-[320px] top-10 right-2 full-theme z-[9999] shadow-2xl p-4 rounded-lg ${
         isOpen ? "absolute" : "hidden"
       } duration-300 `}
     >
