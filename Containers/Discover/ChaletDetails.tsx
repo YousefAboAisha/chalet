@@ -52,7 +52,7 @@ const ChaletDetails = () => {
         <Tag title="Games" />
       </div>
 
-      <p className="mt-6 opacity-90">
+      <p className="mt-4 opacity-90">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industrys standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -64,8 +64,9 @@ const ChaletDetails = () => {
         of Lorem Ipsum.
       </p>
 
-      <div className="grid mt-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+      <div className="flex items-center flex-wrap gap-2 mt-4">
         <FeatureCard
+          id={"1"}
           active={true}
           title="WI-FI"
           Icon={FiWifi}
@@ -73,6 +74,7 @@ const ChaletDetails = () => {
         />
 
         <FeatureCard
+          id={"2"}
           active={false}
           title="Barbecue"
           Icon={GiBarbecue}
@@ -80,6 +82,7 @@ const ChaletDetails = () => {
         />
 
         <FeatureCard
+          id={"3"}
           active={true}
           title="Kitchen"
           Icon={TbToolsKitchen}
@@ -87,6 +90,7 @@ const ChaletDetails = () => {
         />
 
         <FeatureCard
+          id={"4"}
           active={false}
           title="Swimming Pool"
           Icon={FaSwimmingPool}
@@ -94,6 +98,7 @@ const ChaletDetails = () => {
         />
 
         <FeatureCard
+          id={"5"}
           active={false}
           title="Playgrounds"
           Icon={TbSoccerField}
@@ -101,6 +106,7 @@ const ChaletDetails = () => {
         />
 
         <FeatureCard
+          id={"6"}
           active={true}
           title="TV show"
           Icon={BsDisplay}
@@ -108,6 +114,7 @@ const ChaletDetails = () => {
         />
 
         <FeatureCard
+          id={"7"}
           active={true}
           title="Football"
           Icon={IoMdFootball}
@@ -115,6 +122,7 @@ const ChaletDetails = () => {
         />
 
         <FeatureCard
+          id={"8"}
           active={false}
           title="Car garage"
           Icon={MdGarage}

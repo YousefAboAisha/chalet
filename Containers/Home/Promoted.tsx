@@ -1,14 +1,14 @@
-import Slider from "Components/UI/Sliders/PopularSLider";
+import Slider from "Components/UI/Sliders/PromotedSlider";
 import Heading from "Components/UI/Typography/Heading";
 import React from "react";
 
-const Popular = () => {
+const Promoted = () => {
   return (
     <div className="section mb-10">
       <Heading
-        title={"Popular places"}
+        title={"Promoted Chalets"}
         additionalStyles="text-center"
-        details="The most popular places pretend to you "
+        details="You can add your chalet & get noticed and seen much often. "
       />
 
       <Slider />
@@ -16,4 +16,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default Promoted;

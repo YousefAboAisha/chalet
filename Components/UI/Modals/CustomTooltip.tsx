@@ -3,7 +3,7 @@ import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
 type CustomTooltipType = {
-  textTitle: string;
+  textTitle?: string;
   toolTipTitle: string;
   id: string;
 };

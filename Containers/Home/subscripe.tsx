@@ -28,10 +28,13 @@ const Subscripe = () => {
           icon={<BiMailSend size={27} />}
         />
 
-        <div className="absolute w-fit text-[12px] top-[50%] translate-y-[-50%] right-[1.2%]">
-          <Button title="Subscribe Now" style="py-3 hidden md:block lg:block" />
+        <div className="absolute w-fit text-[12px] top-[50%] translate-y-[-50%] right-0 h-[56px]">
+          <Button
+            title="Subscribe Now"
+            style="hidden md:block lg:block h-full rounded-l-none"
+          />
 
-          <div className="bg-primary text-text_dark p-2 rounded-[15px] block lg:hidden md:hidden mr-1 cursor-pointer">
+          <div className="bg-primary text-text_dark h-full rounded-[25px] rounded-l-none w-14 lg:hidden md:hidden flex justify-center items-center cursor-pointer">
             <FiSend size={20} />
           </div>
         </div>
