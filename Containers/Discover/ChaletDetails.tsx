@@ -13,6 +13,7 @@ import { IoMdFootball } from "react-icons/io";
 import { MdGarage } from "react-icons/md";
 import { TbSoccerField, TbToolsKitchen } from "react-icons/tb";
 import ReactStars from "react-stars";
+import Calendar from "./calendar";
 import Review from "./review";
 
 const ChaletDetails = () => {
@@ -135,6 +136,8 @@ const ChaletDetails = () => {
         <BreakLine />
         <Review />
       </div>
+
+      <Calendar />
     </div>
   );
 };

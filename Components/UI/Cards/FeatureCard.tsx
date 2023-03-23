@@ -19,11 +19,11 @@ const FeatureCard = ({ id, active, Icon, title, details }: FeatureCardType) => {
   return (
     <>
       <div
-        className={`relative flex flex-col gap-2 items-center justify-center bg-background_light dark:bg-background_dark text-text_light dark:text-text_dark border border-light dark:border-dark p-4 rounded-2xl shadow-sm ${opacity} `}
+        className={`relative flex flex-col gap-2 items-center justify-center full-theme p-4 rounded-2xl shadow-sm ${opacity} `}
         data-tooltip-id={id}
         data-tooltip-content={details}
       >
-        <Icon size={25} />
+        <Icon size={22} />
         {/* <span className="font-bold text-sm">{title}</span> */}
         <GoPrimitiveDot
           size={12}
@@ -33,7 +33,7 @@ const FeatureCard = ({ id, active, Icon, title, details }: FeatureCardType) => {
 
       <Tooltip
         id={id}
-        className="full-theme !max-w-3/12 !w-fit !p-3 !h-fit opacity-100"
+        className="!max-w-3/12 !w-fit !p-3 !h-fit !opacity-100"
       />
     </>
   );
