@@ -19,7 +19,7 @@ const FeatureCard = ({ id, active, Icon, title, details }: FeatureCardType) => {
   return (
     <>
       <div
-        className={`relative flex flex-col gap-2 items-center justify-center full-theme p-4 rounded-2xl shadow-sm ${opacity} `}
+        className={`relative flex flex-col gap-2 items-center justify-center full-theme p-4 rounded-2xl shadow-md ${opacity} `}
         data-tooltip-id={id}
         data-tooltip-content={details}
       >
