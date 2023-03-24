@@ -118,7 +118,7 @@ const Calendar = ({ date = new Date() }: ICalendarProps) => {
   };
 
   return (
-    <div className="relative mt-6 w-10/12 md:w-10/12 lg:w-9/12  mx-auto">
+    <div className="relative mt-14 w-10/12 md:w-10/12 lg:w-9/12  mx-auto">
       {renderMonthYearHeader()}
       {renderDaysOfWeekHeader()}
       {renderDaysOfMonth()}

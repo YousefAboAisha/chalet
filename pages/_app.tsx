@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { Open_Sans, Roboto } from "@next/font/google";
+import { Open_Sans, Roboto } from "next/font/google";
 import "../styles/globals.css";
 import Layout from "Layout/Layout";
 import { ThemeProvider, useTheme } from "next-themes";
