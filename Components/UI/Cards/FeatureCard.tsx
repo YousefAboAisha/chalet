@@ -1,7 +1,7 @@
 import { IconType } from "react-icons";
 import { GoPrimitiveDot } from "react-icons/go";
-import { Tooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
+// import { Tooltip } from "react-tooltip";
+// import "react-tooltip/dist/react-tooltip.css";
 
 type FeatureCardType = {
   id: string;
@@ -31,10 +31,10 @@ const FeatureCard = ({ id, active, Icon, title, details }: FeatureCardType) => {
         />
       </div>
 
-      <Tooltip
+      {/* <Tooltip
         id={id}
         className="!max-w-3/12 !w-fit !p-3 !h-fit !opacity-100"
-      />
+      /> */}
     </>
   );
 };

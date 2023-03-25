@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Tooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
+// import { Tooltip } from "react-tooltip";
+// import "react-tooltip/dist/react-tooltip.css";
 
 type CustomTooltipType = {
   textTitle?: string;
@@ -13,7 +13,7 @@ const CustomTooltip = ({ textTitle, toolTipTitle, id }: CustomTooltipType) => {
 
   return (
     <div className="relative border-theme bg-primary w-[10px] h-[10px] min-w-[10px] min-h-[10px] rounded-sm">
-      <div
+      {/* <div
         onMouseEnter={() => setIsOpen(true)}
         onClick={() => setIsOpen(false)}
         data-tooltip-id={id}
@@ -26,7 +26,7 @@ const CustomTooltip = ({ textTitle, toolTipTitle, id }: CustomTooltipType) => {
         isOpen={isOpen}
         id={id}
         className="full-theme !max-w-3/12 !w-fit !p-3 !h-fit"
-      />
+      /> */}
     </div>
   );
 };
