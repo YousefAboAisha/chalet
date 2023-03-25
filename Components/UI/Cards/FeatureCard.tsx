@@ -1,7 +1,7 @@
 import { IconType } from "react-icons";
 import { GoPrimitiveDot } from "react-icons/go";
-import { Tooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
+// import { Tooltip } from "react-tooltip";
+// import "react-tooltip/dist/react-tooltip.css";
 
 type FeatureCardType = {
   id: string;
@@ -13,28 +13,24 @@ type FeatureCardType = {
 
 const FeatureCard = ({ id, active, Icon, title, details }: FeatureCardType) => {
   let isActive = active ? "text-[#44bd32]" : "text-[#F00]";
-  let opacity = active ? "opacity-100" : "opacity-30";
-  // console.log(isActive);
+  let opacity = active ? "opacity-100" : "opacity-50";
 
   return (
     <>
       <div
-        className={`relative flex flex-col gap-2 items-center justify-center full-theme p-4 rounded-2xl shadow-md ${opacity} `}
-        data-tooltip-id={id}
-        data-tooltip-content={details}
+        id={id}
+        className={`relative flex flex-col gap-2 items-center justify-center bg-background_light dark:bg-background_dark text-text_light dark:text-text_dark border border-light dark:border-dark p-3 rounded-2xl shadow-sm ${opacity}`}
       >
         <Icon size={22} />
-        {/* <span className="font-bold text-sm">{title}</span> */}
+        <span className="font-bold text-sm">{title}</span>
+        <p className="text-[12px] opacity-80 text-center">{details}.</p>
+
         <GoPrimitiveDot
-          size={12}
-          className={`${isActive} w-fit absolute top-1 right-1`}
+          className={`${isActive} w-fit absolute top-3 right-3`}
         />
       </div>
 
-      <Tooltip
-        id={id}
-        className="!max-w-3/12 !w-fit !p-3 !h-fit !opacity-100"
-      />
+      {/* <Tooltip anchorSelect={"#" + id}>{details}</Tooltip> */}
     </>
   );
 };

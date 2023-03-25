@@ -3,15 +3,10 @@ import BreakLine from "Components/UI/Utils/BreakLine";
 import IconTag from "Components/UI/Utils/IconTag";
 import SocialIcons from "Components/UI/Utils/SocialIcons";
 import Tag from "Components/UI/Utils/Tag";
+import { FeatureCardsData } from "Data/featureCardsData";
 import React from "react";
-import { BiCoinStack, BiCommentDetail, BiFootball } from "react-icons/bi";
-import { BsDisplay } from "react-icons/bs";
-import { FaSwimmingPool } from "react-icons/fa";
-import { FiMapPin, FiWifi } from "react-icons/fi";
-import { GiBarbecue } from "react-icons/gi";
-import { IoMdFootball } from "react-icons/io";
-import { MdGarage } from "react-icons/md";
-import { TbSoccerField, TbToolsKitchen } from "react-icons/tb";
+import { BiCoinStack, BiCommentDetail } from "react-icons/bi";
+import { FiMapPin } from "react-icons/fi";
 import ReactStars from "react-stars";
 import Calendar from "./calendar";
 import Review from "./review";
@@ -65,70 +60,19 @@ const ChaletDetails = () => {
         of Lorem Ipsum.
       </p>
 
-      <div className="flex items-center flex-wrap gap-2 mt-4">
-        <FeatureCard
-          id={"1"}
-          active={true}
-          title="WI-FI"
-          Icon={FiWifi}
-          details="Strong Wifi connection"
-        />
-
-        <FeatureCard
-          id={"2"}
-          active={false}
-          title="Barbecue"
-          Icon={GiBarbecue}
-          details="Modern barbecue tools"
-        />
-
-        <FeatureCard
-          id={"3"}
-          active={true}
-          title="Kitchen"
-          Icon={TbToolsKitchen}
-          details="Fully customized kithcen"
-        />
-
-        <FeatureCard
-          id={"4"}
-          active={false}
-          title="Swimming Pool"
-          Icon={FaSwimmingPool}
-          details="Wide & clean swimming pool"
-        />
-
-        <FeatureCard
-          id={"5"}
-          active={false}
-          title="Playgrounds"
-          Icon={TbSoccerField}
-          details="Playgrounds for Basket & Football"
-        />
-
-        <FeatureCard
-          id={"6"}
-          active={true}
-          title="TV show"
-          Icon={BsDisplay}
-          details="High resolution & 4k screens"
-        />
-
-        <FeatureCard
-          id={"7"}
-          active={true}
-          title="Football"
-          Icon={IoMdFootball}
-          details="Wide football playground"
-        />
-
-        <FeatureCard
-          id={"8"}
-          active={false}
-          title="Car garage"
-          Icon={MdGarage}
-          details="Modern cars garage"
-        />
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 mt-4">
+        {FeatureCardsData.map((elem) => {
+          return (
+            <FeatureCard
+              id={elem.id}
+              key={elem.id}
+              active={elem.active}
+              Icon={elem.Icon}
+              title={elem.title}
+              details={elem.details}
+            />
+          );
+        })}
       </div>
 
       <div className="mt-8">
