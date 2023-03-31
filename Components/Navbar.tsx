@@ -2,6 +2,7 @@ import { Routes } from "Data/routes";
 import { useScrollDirection } from "Hooks/useScrollDirection";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { GiIsland } from "react-icons/gi";
 import Button from "./UI/Inputs/Button";
 
 const Navbar = () => {
@@ -11,14 +12,15 @@ const Navbar = () => {
   // console.log("This is router", router);
 
   return (
-    <div
+    <nav
       className={`fixed w-full h-[70px] top-0 left-0 z-[10000] items-center bg-theme text-theme duration-500 shadow-lg ${
         scrollDirection === "down" ? "" : ""
       } `}
     >
       <div className="container flex flex-row justify-between items-center h-full">
-        <Link href={"/"} className="text-2xl">
-          Chalet
+        <Link href={"/"} className="flex items-center gap-2 text-2xl">
+          <span className="hidden md:block">Chalet</span>
+          <GiIsland size={35} className="text-theme" />
         </Link>
 
         <div
@@ -58,7 +60,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

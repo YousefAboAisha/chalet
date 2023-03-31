@@ -20,7 +20,7 @@ const ChaletCards = () => {
 
   return (
     <div className="mt-8">
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="mt-8 grid-cards gap-4">
         {ChaletsData.slice(0, page).map((elem, index) => {
           return (
             <Thumnail

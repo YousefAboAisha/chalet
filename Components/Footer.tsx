@@ -50,7 +50,7 @@ const Footer = () => {
             );
           })}
         </div>
-        <h2 className="text-[15px] mt-2 font-secondary">
+        <h2 className="text-[15px] mt-2 font-secondary text-center">
           All Rights Reserved To Yousef R Abo Aisha © {date}
         </h2>
       </div>

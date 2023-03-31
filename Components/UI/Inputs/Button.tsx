@@ -23,7 +23,7 @@ const Button = ({
       <span className="flex flex-row gap-2 items-center">
         {title}
         {loading ? (
-          <AiOutlineLoading3Quarters size={20} className="animate-spin" />
+          <AiOutlineLoading3Quarters size={17} className="animate-spin" />
         ) : (
           icon
         )}

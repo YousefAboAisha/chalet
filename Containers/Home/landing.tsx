@@ -8,7 +8,8 @@ const Landing = () => {
 
   return (
     <div className="relative w-full h-[90vh] mt-[70px] flex justify-center items-center bg-landing-image bg-cover bg-center before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#00000052]">
-      <div className="container bg-[#ffffff36] rounded-2xl p-4">
+      {/* bg-[#ffffff36] bg if we wanna add some blur  */}
+      <div className="container rounded-2xl p-4">
         <Heading
           title="Explore the world around you"
           details="take a break form the stress of your everyday life, plan trips and explore your favorite destinations"
@@ -22,7 +23,7 @@ const Landing = () => {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             icon={<BsSearch size={20} />}
-            style=""
+            style="rounded-lg pr-3"
           />
         </div>
       </div>

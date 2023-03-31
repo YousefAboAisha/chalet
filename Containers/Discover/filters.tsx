@@ -18,7 +18,7 @@ const Filters = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           icon={<BsSearch size={20} className="" />}
-          style="rounded-lg"
+          style="rounded-lg pr-3"
         />
       </div>
 

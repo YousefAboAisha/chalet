@@ -16,7 +16,7 @@ const ChaletCards = () => {
         />
       </div>
 
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid-cards mt-8">
         {ChaletsData.slice(0, 6).map((elem, index) => {
           return (
             <Thumnail
