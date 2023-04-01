@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { GiIndianPalace } from "react-icons/gi";
+import { RiHotelLine } from "react-icons/ri";
 import { FooterData } from "../Data/FooterData";
 import { Social } from "../Data/Social";
 import CustomImage from "./UI/Cards/CustomImage";
@@ -26,7 +26,7 @@ const Footer = () => {
 
       <div className="flex flex-col gap-6 items-center justify-center">
         <div className="max-w-[80px] max-h-[80px] flex flex-col gap-2 justify-center items-center">
-          <GiIndianPalace size={55} className="text-theme" />
+          <RiHotelLine size={55} className="text-theme" />
 
           {/* <h2 className="font-bold text-">Weddin</h2> */}
         </div>

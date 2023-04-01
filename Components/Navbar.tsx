@@ -2,7 +2,7 @@ import { Routes } from "Data/routes";
 import { useScrollDirection } from "Hooks/useScrollDirection";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { GiIndianPalace, GiIsland } from "react-icons/gi";
+import { RiHotelLine } from "react-icons/ri";
 import Button from "./UI/Inputs/Button";
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="container flex flex-row justify-between items-center h-full">
         <Link href={"/"} className="flex items-center gap-2 text-2xl">
           <span className="hidden md:block">Wedding halls</span>
-          <GiIndianPalace size={35} className="text-theme" />
+          <RiHotelLine size={35} className="text-theme" />
         </Link>
 
         <div
