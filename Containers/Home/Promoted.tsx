@@ -6,9 +6,9 @@ const Promoted = () => {
   return (
     <div className="section mb-10">
       <Heading
-        title={"Promoted Chalets"}
+        title={"Promoted Wedding halls"}
         additionalStyles="text-center"
-        details="You can add your chalet & get noticed and seen much often. "
+        details="You can add your Wedding hall & get noticed and seen much often. "
       />
 
       <Slider />

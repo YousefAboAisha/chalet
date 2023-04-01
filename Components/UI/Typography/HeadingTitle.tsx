@@ -14,7 +14,7 @@ const HeadingTitle = () => {
       <IoIosArrowForward />
       <span className="">Discover</span>
       <IoIosArrowForward />
-      <span className="underline">Chalet Name {chalet_id} </span>
+      <span className="underline">Hall Name {chalet_id} </span>
     </div>
   );
 };

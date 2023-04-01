@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Chalet | Home</title>
+        <title>Wedding halls | Home</title>
         <meta
           name="description"
           content="Chalet website, resorts, renting, show case"

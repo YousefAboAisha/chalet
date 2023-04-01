@@ -8,7 +8,7 @@ const discover = () => {
   return (
     <>
       <Head>
-        <title>Chalet | Discover</title>
+        <title>Wedding halls | Discover</title>
         <meta
           name="description"
           content="Chalet website, resorts, renting, show case, discover new chalets"

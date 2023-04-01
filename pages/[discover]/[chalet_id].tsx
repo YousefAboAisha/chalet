@@ -8,7 +8,7 @@ const Chalet = () => {
   return (
     <>
       <Head>
-        <title>Chalet | White chalet</title>
+        <title>Wedding halls | Love Boat </title>
         <meta name="description" content="Chalet description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />

@@ -5,7 +5,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Chalet | About</title>
+        <title>Wedding halls | About</title>
         <meta
           name="description"
           content="Chalet website, resorts, renting, show case, discover new chalets"

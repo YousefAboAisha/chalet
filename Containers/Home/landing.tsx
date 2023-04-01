@@ -19,7 +19,7 @@ const Landing = () => {
         <div className="w-full md:w-10/12 lg:w-9/12 mx-auto mt-8">
           <Input
             type={"search"}
-            placeholder={"Search for Chalets to reserve!"}
+            placeholder={"Search for wedding halls to reserve!"}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             icon={<AiOutlineSearch size={24} />}

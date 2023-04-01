@@ -20,7 +20,7 @@ const ChaletDetails = () => {
 
   return (
     <div className="relative mt-8 text-text_light dark:text-text_dark">
-      <h2 className="font-bold text-3xl">Chalet Name</h2>
+      <h2 className="font-bold text-3xl">Hall Name</h2>
 
       <div className="flex gap-2 items-center my-1 justify-between">
         <div className="flex items-center gap-2">

@@ -10,7 +10,7 @@ const ChaletCards = () => {
     <div className="section">
       <div className="flex items-center justify-between">
         <Heading
-          title="Chalet Recommendations"
+          title="Wedding halls Recommendations"
           details="The best travel recommendations from around the world for you!"
           detailsStyles="w-full lg:w-full mx-0 text-start"
         />

@@ -14,7 +14,7 @@ const Filters = () => {
       <div className="w-full md:w-10/12 lg:w-9/12 flex flex-row gap-2">
         <Input
           type={"search"}
-          placeholder={"Search for Chalets to reserve!"}
+          placeholder={"Search for wedding halls to reserve!"}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           icon={<BsSearch size={20} className="" />}
