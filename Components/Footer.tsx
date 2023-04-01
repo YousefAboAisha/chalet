@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { GiIsland } from "react-icons/gi";
 import { FooterData } from "../Data/FooterData";
 import { Social } from "../Data/Social";
 import CustomImage from "./UI/Cards/CustomImage";
@@ -25,14 +26,9 @@ const Footer = () => {
 
       <div className="flex flex-col gap-6 items-center justify-center">
         <div className="max-w-[80px] max-h-[80px] flex flex-col gap-2 justify-center items-center">
-          <CustomImage
-            src="/favicon.png"
-            width={1000}
-            height={1000}
-            alt="Logo"
-            className="max-h-[70px] max-w-[70px]"
-          />
-          <h2 className="font-bold text-">Chalet</h2>
+          <GiIsland size={60} className="text-theme" />
+
+          <h2 className="font-bold text-lg">Chalet</h2>
         </div>
 
         <div className="flex flex-row gap-4 ">

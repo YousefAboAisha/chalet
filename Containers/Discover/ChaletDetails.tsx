@@ -79,13 +79,13 @@ const ChaletDetails = () => {
         })}
       </div>
 
-      {/* <Calendar /> */}
-
       <div className="mt-8">
         <h2 className="font-bold text-3xl">Reviews</h2>
         <BreakLine />
         <Review />
       </div>
+
+      <Calendar />
     </div>
   );
 };
