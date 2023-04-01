@@ -41,6 +41,10 @@
   html {
     @apply text-text_light;
   }
+  /* 
+  p {
+    @apply text-[#222] dark:text-[#adb5bd];
+  } */
 
   ::-webkit-scrollbar {
     @apply w-1 h-[5px];

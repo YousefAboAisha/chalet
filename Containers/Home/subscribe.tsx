@@ -26,6 +26,7 @@ const Subscripe = () => {
           type="email"
           placeholder="Enter your email address"
           icon={<BiMailSend size={27} />}
+          style="!rounded-[25px]"
         />
 
         <div className="absolute w-fit text-[12px] top-[50%] translate-y-[-50%] right-0 h-[56px]">
@@ -35,7 +36,7 @@ const Subscripe = () => {
           />
 
           <div className="bg-primary text-text_dark h-full rounded-[25px] rounded-l-none w-14 lg:hidden md:hidden flex justify-center items-center cursor-pointer">
-            <FiSend size={20} />
+            <FiSend size={22} />
           </div>
         </div>
       </div>

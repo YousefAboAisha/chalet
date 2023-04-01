@@ -2,7 +2,7 @@ import ChaletCards from "Containers/Home/chaletCards";
 import Landing from "Containers/Home/landing";
 import Popular from "Containers/Home/popular";
 import Promoted from "Containers/Home/Promoted";
-import Subscripe from "Containers/Home/subscripe";
+import Subscripe from "Containers/Home/subscribe";
 import Value from "Containers/Home/value";
 import VideoHero from "Containers/Home/video";
 import Head from "next/head";

@@ -1,6 +1,5 @@
-import { AiOutlineHome } from "react-icons/ai";
-import { MdOutlineImageSearch } from "react-icons/md";
-import { VscMailRead } from "react-icons/vsc";
+import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { MdOutlineTravelExplore } from "react-icons/md";
 
 export const Routes = [
   {
@@ -12,13 +11,13 @@ export const Routes = [
   {
     title: "Discover",
     href: "/discover",
-    icon: MdOutlineImageSearch,
+    icon: MdOutlineTravelExplore,
     path: "/[discover]",
   },
   {
     title: "About",
     href: "/about",
-    icon: VscMailRead,
+    icon: AiOutlineUser,
     path: "/about",
   },
 ];

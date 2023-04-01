@@ -31,12 +31,8 @@ const Navbar = () => {
               <Link
                 key={index}
                 href={elem.href}
-                className={`duration-300 cursor-pointer pb-1 
-            ${
-              router.pathname == `${elem.path}`
-                ? "text-primary border-primary border-b-2"
-                : ""
-            } `}
+                className={`duration-300 cursor-pointer 
+            ${router.pathname == `${elem.path}` ? "text-primary" : ""} `}
                 title={elem.title}
               >
                 <span className="hidden md:block lg:block">{elem.title}</span>

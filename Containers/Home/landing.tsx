@@ -1,7 +1,7 @@
 import Input from "Components/UI/Inputs/Input";
 import Heading from "Components/UI/Typography/Heading";
 import React, { useState } from "react";
-import { BsSearch } from "react-icons/bs";
+import { AiOutlineSearch } from "react-icons/ai";
 
 const Landing = () => {
   const [query, setQuery] = useState("");
@@ -22,8 +22,7 @@ const Landing = () => {
             placeholder={"Search for Chalets to reserve!"}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            icon={<BsSearch size={20} />}
-            style="rounded-lg pr-3"
+            icon={<AiOutlineSearch size={24} />}
           />
         </div>
       </div>
