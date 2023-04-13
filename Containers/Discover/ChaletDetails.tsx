@@ -9,6 +9,7 @@ import { BiCoinStack, BiCommentDetail } from "react-icons/bi";
 import { FiMapPin } from "react-icons/fi";
 import ReactStars from "react-stars";
 import Calendar from "./calendar";
+import Map from "./Map";
 import Review from "./review";
 
 const ChaletDetails = () => {
@@ -58,9 +59,9 @@ const ChaletDetails = () => {
         {renderredText}
         <span
           onClick={() => setallTextIsShown(!allTextIsShown)}
-          className="text-primary font-bold cursor-pointer mx-1"
+          className="text-primary font-bold cursor-pointer text-sm mx-1"
         >
-          {allTextIsShown ? "Read less" : "Read More"}
+          {allTextIsShown ? "read less" : "read more"}
         </span>
       </p>
 
@@ -79,13 +80,15 @@ const ChaletDetails = () => {
         })}
       </div>
 
-      <div className="mt-8">
+      <Map />
+
+      <div className="section">
         <h2 className="font-bold text-3xl">Reviews</h2>
         <BreakLine />
         <Review />
       </div>
 
-      <Calendar />
+      {/* <Calendar /> */}
     </div>
   );
 };
