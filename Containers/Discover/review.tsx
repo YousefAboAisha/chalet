@@ -1,9 +1,9 @@
+import ReviewCard from "Components/UI/Cards/ReviewCard";
 import Button from "Components/UI/Inputs/Button";
 import TextArea from "Components/UI/Inputs/TextArea";
 import BreakLine from "Components/UI/Utils/BreakLine";
 import React, { useState } from "react";
 import ReactStars from "react-stars";
-import ReviewCard from "../../Components/UI/Cards/reviewCard";
 
 const Review = () => {
   const starsNum = 5;

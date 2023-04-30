@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PopularData } from "Data/popularData";
 import CustomImage from "../Cards/CustomImage";
 import { FiMapPin } from "react-icons/fi";
+import { CarouselData } from "Data/carouselData";
 
 const responsive = {
   superLargeDesktop: {
@@ -36,14 +37,14 @@ export default function SingleSlider() {
       showDots
       dotListClass="-translate-y-2"
     >
-      {PopularData.map((elem, index) => {
+      {CarouselData.map((elem, index) => {
         return (
           <div className="relative group" key={index}>
             <CustomImage
               src={elem.src}
               width={400}
               height={400}
-              alt="faw"
+              alt="chalet photo"
               title={elem.title}
               className="rounded-2xl"
             />

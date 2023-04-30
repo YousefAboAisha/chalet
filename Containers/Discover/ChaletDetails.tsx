@@ -80,9 +80,9 @@ const ChaletDetails = () => {
         })}
       </div>
 
-      <Map />
+      {/* <Map /> */}
 
-      <div className="section">
+      <div className="mt-10">
         <h2 className="font-bold text-3xl">Reviews</h2>
         <BreakLine />
         <Review />
